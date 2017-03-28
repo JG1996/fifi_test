@@ -8,7 +8,6 @@ var CACHED_URLS = [
     'manifest.json',
     'mystyles.css',
     'offline.html',
-    'readme.md',
     'second.html',
     'serviceworker.js',
     'styles.css',
