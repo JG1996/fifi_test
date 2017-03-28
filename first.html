@@ -143,6 +143,8 @@
                         <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Read more</a>
                     </div>
                 </div>
+                <h3>My Google Maps Demo</h3>
+                <div id="map"></div>
                 
       
             </div>
@@ -159,15 +161,29 @@
     </div>
        <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
       <script>
-      if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
-
-    console.log('Service worker registered successfully');
-  }).catch(function(err) {
-    console.log('Service worker registration failed: ', err);
-  });
-}
-
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
+                console.log('Service worker registered successfully');
+            }).catch(function(err) {
+                console.log('Service worker registration failed: ', err);
+            });
+        }
       </script>
+      <script>
+          function initMap() {
+            var uluru = {lat: 53.008037, lng: -2.177920};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 15,
+              center: uluru
+            });
+            var marker = new google.maps.Marker({
+              position: uluru,
+              map: map
+            });
+          }
+        </script>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqdbXtLSxuhYfufKJzUu_jEqivbz43bF8&callback=initMap">
+        </script>
   </body>
 </html>
