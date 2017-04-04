@@ -1,4 +1,4 @@
-var BASE_PATH = '/NAMEOF REPRO/';
+var BASE_PATH = '/test_proghapi/';
 var CACHE_NAME = 'gih-cache-v6';
 var CACHED_URLS = [
     // Our HTML
