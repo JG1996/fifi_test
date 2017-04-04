@@ -1,8 +1,12 @@
 var BASE_PATH = '/test_proghapi/';
 var CACHE_NAME = 'gih-cache-v6';
+var TEMP_IMAGE_CACHE_NAME = 'temp-cache-v1';
+var newsAPIJSON = "https://newsapi.org/v1/articles?source=bbc-news&apiKey=39eeb79ad0164c6fbfc7e9bb5d30c718";
+
 var CACHED_URLS = [
     // Our HTML
     BASE_PATH + 'first.html',
+    BASE_PATH + 'second.html',
     
     // Images for favicons
     BASE_PATH + 'appimages/android-icon-36x36.png',
@@ -15,6 +19,7 @@ var CACHED_URLS = [
 
     //Images for page
     BASE_PATH + 'appimages/event-default.png',
+    BASE_PATH + 'appimages/jack.jpg',   
     BASE_PATH + 'appimages/offlinemap.jpg',
     BASE_PATH + 'appimages/dino.png',
     BASE_PATH + 'appimages/jack.jpg',
@@ -27,6 +32,7 @@ var CACHED_URLS = [
     BASE_PATH + 'appimages/ms-icon-144x144.png',
     BASE_PATH + 'appimages/ms-icon-150x150.png',
     BASE_PATH + 'appimages/ms-icon-310x310.png',
+    BASE_PATH + 'appimages/news-default.jpg', 
 //    BASE_PATH + 'eventsimages/example-blog01.jpg',
 //    BASE_PATH + 'eventsimages/example-blog02.jpg',
 //    BASE_PATH + 'eventsimages/example-blog03.jpg',
