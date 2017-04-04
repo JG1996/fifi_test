@@ -8,13 +8,13 @@
     <title>Test Page - Progressive Web Apps</title>
 <link rel="apple-touch-icon" sizes="57x57" href="appimages/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="appimages/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="apple-touch-icon" sizes="72x72" href="appimages/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="appimages/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="appimages/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="appimages/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="appimages/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="appimages/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="appimages/apple-icon-180x180.png">
 <link rel="icon" type="image/png" sizes="192x192"  href="appimages/android-icon-192x192.png">
 <link rel="icon" type="image/png" sizes="32x32" href="appimages/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="appimages/favicon-96x96.png">
@@ -23,13 +23,13 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="appimages/ms-icon-144x144.png">
 <meta name="theme-color" content="#db5945"> 
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-deep_orange.min.css">
+    <link rel="stylesheet" href="min-style.css">
     <link rel="stylesheet" href="styles.css">
 
   </head>
-  <body> 
+  <body>
     <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
       <header class="demo-header mdl-layout__header mdl-layout__header--scroll mdl-color--grey-100 mdl-color-text--grey-800">
         <div class="mdl-layout__header-row">
@@ -51,34 +51,34 @@
               <p>
                 Tempor tempor aliqua in commodo cillum Lorem magna dolore proident Lorem. Esse ad consequat est excepteur irure eu irure quis aliqua qui. Do mollit esse veniam excepteur ut veniam anim minim dolore sit commodo consequat duis commodo. Sunt dolor reprehenderit ipsum minim eiusmod eu consectetur anim excepteur eiusmod. Duis excepteur anim dolor sit enim veniam deserunt anim adipisicing Lorem elit. Cillum sunt do consequat elit laboris nisi consectetur.
               </p>
-              <h3>My Google Maps Demo</h3>
-                <div id="map-container" style="height: 300px;"></div>
+            <h3>Sub Title</h3>
+              <div id="map-container" style="height: 300px;"></div>
                 <script>
-                    function initMap() {
-                        var myLocation = {lat: 53.0103798, lng: -2.1801833};
-                        var map = new google.maps.Map(document.getElementById('map-container'), {
-                        zoom: 15,
-                        center: myLocation
-                        });
-                        var marker = new google.maps.Marker({
-                        position: myLocation,
-                        map: map
-                        });
-                    }
+                function initMap() {
+                    var myLocation = {lat: 53.0103798, lng: -2.1801833};
+                    var map = new google.maps.Map(document.getElementById('map-container'), {
+                    zoom: 2,
+                    center: myLocation
+                    });
+                    var marker = new google.maps.Marker({
+                    position: myLocation,
+                    map: map
+                    });
+                }
                 </script>
                 <script async defer
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCK3XrBeMKDZjRxT19zuaBGqlvnICd00EA&callback=initMap">
-                </script>
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMNj1opBAeNjTEY4PdjCABCwJdrHx0cvI&callback=initMap">
+             </script>
+         
               <p>
                 Cillum dolor esse sit incididunt velit eiusmod magna ad nostrud officia aute dolor dolor. Magna esse ullamco pariatur adipisicing consectetur eu commodo officia. Ex cillum consequat mollit minim elit est deserunt occaecat nisi amet. Quis aliqua nostrud Lorem occaecat sunt. Eiusmod quis amet ullamco aliquip dolore ut incididunt duis adipisicing. Elit consequat nisi eiusmod aute ipsum sunt veniam do est. Occaecat mollit aliquip ut proident consectetur amet ex dolore consectetur aliqua elit.
               </p>
           </div>
-
         </div>
             <div class="mdl-grid portfolio-max-width">
                 <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
                     <div class="mdl-card__media">
-                        <img class="article-image" src=" eventsimages/example-work01.jpg" border="0" alt="">
+                        <img class="article-image" src="eventsimages/example-work01.jpg" border="0" alt="">
                     </div>
                     <div class="mdl-card__title">
                         <h2 class="mdl-card__title-text">Blog template</h2>
@@ -92,7 +92,7 @@
                 </div>
                 <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
                     <div class="mdl-card__media">
-                        <img class="article-image" src=" eventsimages/example-work07.jpg" border="0" alt="">
+                        <img class="article-image" src="eventsimages/example-work07.jpg" border="0" alt="">
                     </div>
                     <div class="mdl-card__title">
                         <h2 class="mdl-card__title-text">Sunt nulla</h2>
@@ -106,7 +106,7 @@
                 </div>
                 <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
                     <div class="mdl-card__media">
-                        <img class="article-image" src=" eventsimages/example-work02.jpg" border="0" alt="">
+                        <img class="article-image" src="eventsimages/example-work02.jpg" border="0" alt="">
                     </div>
                     <div class="mdl-card__title">
                         <h2 class="mdl-card__title-text">Android.com website</h2>
@@ -120,7 +120,7 @@
                 </div>
                 <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
                     <div class="mdl-card__media">
-                        <img class="article-image" src=" eventsimages/example-work03.jpg" border="0" alt="">
+                        <img class="article-image" src="eventsimages/example-work03.jpg" border="0" alt="">
                     </div>
                     <div class="mdl-card__title">
                         <h2 class="mdl-card__title-text">Dashboard template</h2>
@@ -134,7 +134,7 @@
                 </div>
                 <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
                     <div class="mdl-card__media">
-                        <img class="article-image" src=" eventsimages/example-work04.jpg" border="0" alt="">
+                        <img class="article-image" src="eventsimages/example-work04.jpg" border="0" alt="">
                     </div>
                     <div class="mdl-card__title">
                         <h2 class="mdl-card__title-text">Text-heavy website</h2>
@@ -148,7 +148,7 @@
                 </div>
                 <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
                     <div class="mdl-card__media">
-                        <img class="article-image" src=" eventsimages/example-work08.jpg" border="0" alt="">
+                        <img class="article-image" src="eventsimages/example-work08.jpg" border="0" alt="">
                     </div>
                     <div class="mdl-card__title">
                         <h2 class="mdl-card__title-text">Ex officia laborum</h2>
@@ -174,33 +174,17 @@
         </footer>
       </main>
     </div>
-       <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+       <script src="material.js"></script>
       <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
-                console.log('Service worker registered successfully');
-            }).catch(function(err) {
-                console.log('Service worker registration failed: ', err);
-            });
-        }
+      if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
+
+    console.log('Service worker registered successfully');
+  }).catch(function(err) {
+    console.log('Service worker registration failed: ', err);
+  });
+}
+
       </script>
-<!--
-      <script>
-          function initMap() {
-            var uluru = {lat: 53.008037, lng: -2.177920};
-            var map = new google.maps.Map(document.getElementById('map'), {
-              zoom: 15,
-              center: uluru
-            });
-            var marker = new google.maps.Marker({
-              position: uluru,
-              map: map
-            });
-          }
-        </script>
-        <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCK3XrBeMKDZjRxT19zuaBGqlvnICd00EA&callback=initMap">
-        </script>
--->
   </body>
 </html>
