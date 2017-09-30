@@ -1,0 +1,303 @@
+body {
+    font-family: 'Arvo', serif;
+    color: #666;
+    background-color: #e4e4e4;
+    align-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+header img {
+    padding-top: 10px;
+    width: 22%;
+}
+
+.container {
+    align-content: center;
+    text-align: center;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.current_page {
+    font-weight: bold;
+}
+
+nav ul li a {
+    font-size: 16px;
+    text-decoration: none;
+    font-family: 'Arvo', serif;
+    color: #666;
+    list-style-type: none;
+    display: block;
+    padding: 14px;
+    transition: .1s ease;
+}
+
+nav ul li a:hover {
+    color: #a8a8a8;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul {
+    border-top: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
+    padding-left: 0;
+}
+
+#slider img {
+    display: inline-block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#slider {
+    display: inline-block;
+/*    height: 380px;*/
+    width: 330px;
+    height: 330px;
+    padding-bottom: 6px;
+    padding-right: 1px;
+}
+
+#slider2 {
+    display: inline-block;
+/*    height: 380px;*/
+    width: 330px;
+    height: 330px;
+    padding-bottom: 6px;
+    padding-right: 1px;
+    animation-delay: 1s;
+}
+
+footer {
+    left: -10px;
+    width: 100%;
+    height: 60px;
+    background-color: #efefef;
+    text-align: left;
+}
+
+footer i {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+    
+}
+
+footer a {
+    color: #666;
+    transition: .1s ease;
+}
+
+footer a:hover {
+    color: #a8a8a8;
+}
+
+footer h5 {
+    margin: 10px;
+    padding-top: 12px;
+    display: inline-block;
+}
+
+#container-right {
+    width: 32%;
+    display: inline-block;
+    text-align: right;
+    margin-left: auto;
+    margin-right: 0;
+    float: right;
+}
+
+#container-left {
+    margin-top: 4px;
+    width: 480px;
+    display: inline-block;
+    left: 0;
+    margin-left: 8px;
+    font-family: 'Arvo', serif;
+}
+
+#location {
+    height: 550px;
+}
+
+#left-location {
+    width: 50%;
+}
+
+#right-location {
+    width: 50%;
+    float: right;
+    text-align: left;
+}
+
+#map {
+    width: 100%;
+    height: 300px;
+    display: inline-block;
+    margin-top: 0;
+}
+
+#location img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+#location {
+    display: inline-block;
+    margin-top: 16px;
+    margin-bottom: 100px;
+}
+
+#location h2 {
+    margin-top: 0;
+    margin-left: 12px;
+}
+
+#location p {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+
+
+
+
+
+
+div { position: relative; }
+
+.slideshow-img {
+  position: absolute;
+  top: 0; left: 0;
+  z-index: 3;
+  -webkit-animation: slideshow 12s linear 0s infinite;
+  -moz-animation: slideshow 12s linear 0s infinite;
+  -ms-animation: slideshow 12s linear 0s infinite;
+  -o-animation: slideshow 12s linear 0s infinite;
+  animation: slideshow 12s linear 0s infinite;
+}
+
+.slideshow-img:nth-child(2) {
+  z-index: 2;
+  -webkit-animation: slideshow 12s linear 4s infinite;
+  -moz-animation: slideshow 12s linear 4s infinite;
+  -ms-animation: slideshow 12s linear 4s infinite;
+  -o-animation: slideshow 12s linear 4s infinite;
+  animation: slideshow 12s linear 4s infinite;
+}
+
+.slideshow-img:nth-child(3) {
+   z-index: 1;
+  -webkit-animation: slideshow 12s linear 8s infinite;
+  -moz-animation: slideshow 12s linear 8s infinite;
+  -ms-animation: slideshow 12s linear 8s infinite;
+  -o-animation: slideshow 12s linear 8s infinite;
+  animation: slideshow 12s linear 8s infinite;
+}
+
+div { position: relative; }
+
+.slideshow-img2 {
+  position: absolute;
+  top: 0; left: 0;
+  z-index: 3;
+  -webkit-animation: slideshow 12s linear 0s infinite;
+  -moz-animation: slideshow 12s linear 0s infinite;
+  -ms-animation: slideshow 12s linear 0s infinite;
+  -o-animation: slideshow 12s linear 0s infinite;
+  animation: slideshow 12s linear 0s infinite;
+      animation-delay: 2s;
+}
+
+.slideshow-img2:nth-child(2) {
+  z-index: 2;
+  -webkit-animation: slideshow 12s linear 4s infinite;
+  -moz-animation: slideshow 12s linear 4s infinite;
+  -ms-animation: slideshow 12s linear 4s infinite;
+  -o-animation: slideshow 12s linear 4s infinite;
+  animation: slideshow 12s linear 4s infinite;
+      animation-delay: 6s;
+}
+
+.slideshow-img2:nth-child(3) {
+   z-index: 1;
+  -webkit-animation: slideshow 12s linear 8s infinite;
+  -moz-animation: slideshow 12s linear 8s infinite;
+  -ms-animation: slideshow 12s linear 8s infinite;
+  -o-animation: slideshow 12s linear 8s infinite;
+  animation: slideshow 12s linear 8s infinite;
+      animation-delay: 10s;
+}
+
+.slideshow-img3 {
+  position: absolute;
+  top: 0; left: 0;
+  z-index: 3;
+  -webkit-animation: slideshow 12s linear 0s infinite;
+  -moz-animation: slideshow 12s linear 0s infinite;
+  -ms-animation: slideshow 12s linear 0s infinite;
+  -o-animation: slideshow 12s linear 0s infinite;
+  animation: slideshow 12s linear 0s infinite;
+      animation-delay: 5s;
+}
+
+.slideshow-img3:nth-child(2) {
+  z-index: 2;
+  -webkit-animation: slideshow 12s linear 4s infinite;
+  -moz-animation: slideshow 12s linear 4s infinite;
+  -ms-animation: slideshow 12s linear 4s infinite;
+  -o-animation: slideshow 12s linear 4s infinite;
+  animation: slideshow 12s linear 4s infinite;
+      animation-delay: 9s;
+}
+
+.slideshow-img3:nth-child(3) {
+   z-index: 1;
+  -webkit-animation: slideshow 12s linear 8s infinite;
+  -moz-animation: slideshow 12s linear 8s infinite;
+  -ms-animation: slideshow 12s linear 8s infinite;
+  -o-animation: slideshow 12s linear 8s infinite;
+  animation: slideshow 12s linear 8s infinite;
+      animation-delay: 1s;
+}
+
+@-webkit-keyframes slideshow {
+   25% { opacity: 1;}
+   33.33% { opacity: 0;} 
+   91.66% { opacity: 0;}
+   100% { opacity: 1;}
+}
+@-moz-keyframes slideshow {
+   25% { opacity: 1;}
+   33.33% { opacity: 0;} 
+   91.66% { opacity: 0;}
+   100% { opacity: 1;}
+}
+@-ms-keyframes slideshow {
+   25% { opacity: 1;}
+   33.33% { opacity: 0;} 
+   91.66% { opacity: 0;}
+   100% { opacity: 1;}
+}
+@-o-keyframes slideshow {
+   25% { opacity: 1;}
+   33.33% { opacity: 0;} 
+   91.66% { opacity: 0;}
+   100% { opacity: 1;}
+}
+@keyframes slideshow {
+   25% { opacity: 1;}
+   33.33% { opacity: 0;} 
+   91.66% { opacity: 0;}
+   100% { opacity: 1;}
+}

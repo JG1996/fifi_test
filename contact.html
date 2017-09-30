@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="icon" href="Images/favicon.ico">
+        <link rel="stylesheet" href="default.css">
+        <link rel="stylesheet" href="contact.css">
+        <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+        <link rel="stylesheet" href="Fonts/font-awesome.min.css">
+        <title>Fifi Home & Interiors</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <img src="Images/Logo_For_Site.png">
+                <div id="navigation">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a class="current_page" href="contact.html">Contact Us</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <form action="form.php" method="post">
+
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name..">
+                    
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Your email..">
+
+                    <label for="reason">Reason For Contacting</label>
+                    <select id="reason" name="reason">
+                        <option value="question">Question</option>
+                        <option value="refunds">Refunds</option>
+                        <option value="website">Website</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="comments">Subject</label>
+                    <textarea id="subject" name="comments" placeholder="Write something.." style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+
+                </form>
+            </header>
+            
+        <footer>
+                <div id="container-left">
+                    <p>Copyright © 2017, Fifi Home Interiors.</p>
+                </div>
+                <div id="container-right">
+                    <h5>Follow Us</h5>
+                    <a href="https://www.facebook.com/Fifi-116074215737885/"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+                    <a href="http://www.instagram.com/fifihomeinteriors"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                    <a href="http://www.twitter.com/fifilifestyle"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+<!--                    <a href="http://www.pinterest.com"><i class="fa fa-pinterest fa-2x" aria-hidden="true"></i></a>-->
+                </div>
+        </footer>
+        
+    </body>
+</html>

@@ -1,18 +1,270 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="mystyles.css">
-<title>Test mobile page</title>
-</head>
-
-<body>
-<header><h1>My Test Page</h1></header>
-<div id="container">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dignissim venenatis consequat. Praesent quis odio a neque venenatis ornare. Nam vel sem sed magna porttitor ultrices. Nunc nec turpis vitae lacus efficitur pulvinar in id nibh. Praesent sed mi vel ipsum faucibus ultrices iaculis eget dui. Praesent ultricies velit vel vestibulum convallis. Praesent accumsan luctus sem, at consectetur erat convallis pretium. Nunc pulvinar nec nibh a mollis. Donec a metus in sapien sollicitudin fermentum vitae eu eros.</p>
-<p>Nulla pellentesque nunc vel lectus semper, tincidunt blandit magna maximus. Nam vel imperdiet lacus. Donec et euismod massa, eu suscipit ipsum. Pellentesque lobortis nulla vitae scelerisque elementum. Curabitur at tempor nisl, vel imperdiet orci. Fusce commodo justo nibh, vel convallis purus blandit vitae. Sed a arcu eget mauris rutrum bibendum.</p>
-</div>
-<footer>Footer From Me</footer>
-</body>
+    <head>
+        <link rel="icon" href="Images/favicon.ico">
+        <link rel="stylesheet" href="default.css">
+        <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+        <link rel="stylesheet" href="Fonts/font-awesome.min.css">
+        <title>Fifi Home & Interiors</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <img src="Images/Logo_For_Site.png">
+                <div id="navigation">
+                    <nav>
+                        <ul>
+                            <li><a class="current_page" href="index.html">Home</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div id="slider" style="padding-right: 1px;">
+                <img class="slideshow-img" src="Images/1.png"> 
+                <img class="slideshow-img" src="Images/2.png"> 
+                <img class="slideshow-img" src="Images/3.png"> 
+            </div>
+            <div id="slider">
+                <img class="slideshow-img2" src="Images/4.png"> 
+                <img class="slideshow-img2" src="Images/5.png"> 
+                <img class="slideshow-img2" src="Images/6.png"> 
+            </div>
+            <div id="slider">
+                <img class="slideshow-img3" src="Images/7.png"> 
+                <img class="slideshow-img3" src="Images/8.png"> 
+                <img class="slideshow-img3" src="Images/9.png"> 
+            </div>
+            <div id="location">
+                <div id="right-location">
+                    <h2>Find Us</h2>
+                    <p>Come and visit our gorgeous emporium of unusual, eclectic delights. Mixing vintage, new and hand made, we're right in the heart of beautiful, creative Shrewsbury. Located in historic Milk Street, just off High Street at the top of Wyle Cop, we're part of the town's thriving "independent quarter" that welcomes visitors to the town. </p>
+                    <h2>Opening Hours</h2>
+                    <p>Tuesday - Saturday 10am - 5pm</p>
+                    <p>Sunday & Monday Sometimes</p>
+                    <h2>Get In Contact</h2>
+                    <p><i class="fa fa-envelope" aria-hidden="true"></i> Email - sarah@fifihomeinteriors.co.uk</p>
+                    <p><i class="fa fa-phone" aria-hidden="true"></i> Phone - 01743 242 254</p>
+                </div>
+                <div id="left-location">
+                    <div id="map"></div>
+                    <img src="Images/thumbnail_shop_grey1.jpg">
+                </div>
+            </div>
+            <footer>
+                <div id="container-left">
+                    <p>Copyright © 2017, Fifi Home Interiors.</p>
+                </div>
+                <div id="container-right">
+                    <h5>Follow Us</h5>
+                    <a href="https://www.facebook.com/Fifi-116074215737885/"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+                    <a href="http://www.instagram.com/fifihomeinteriors"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                    <a href="http://www.twitter.com/fifilifestyle"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+<!--                    <a href="http://www.pinterest.com"><i class="fa fa-pinterest fa-2x" aria-hidden="true"></i></a>-->
+                </div>
+        </footer>
+        </div>
+        <script>
+              function initMap() {
+                var uluru = {lat: 52.706840, lng: -2.752621};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 18,
+                  center: uluru,
+                  styles: [
+    {
+        "featureType": "water",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#d3d3d3"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "stylers": [
+            {
+                "color": "#808080"
+            },
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#b3b3b3"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#ffffff"
+            },
+            {
+                "weight": 1.8
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#d7d7d7"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#ebebeb"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#a7a7a7"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#efefef"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#696969"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#737373"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#d6d6d6"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {},
+    {
+        "featureType": "poi",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#dadada"
+            }
+        ]
+    }
+]
+                });
+                var marker = new google.maps.Marker({
+                  position: uluru,
+                  map: map
+                });
+              }
+            </script>
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiFmgImKRbqMqI9G0U659Ie9X_5Fj9igI&callback=initMap">
+        </script>
+    </body>
 </html>
